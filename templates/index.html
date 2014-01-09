@@ -1,0 +1,532 @@
+<!doctype html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+  <title>tre.for.pycon2014</title> 
+  <meta name="description" content="BlackTie.co - Free Handsome Bootstrap Themes" />      
+  <meta name="keywords" content="themes, bootstrap, free, templates, bootstrap 3, freebie,">
+  <meta property="og:title" content="">
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fancybox/jquery.fancybox-v=2.1.5.css') }}" media="screen" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/elusive-webfont.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/morris-0.4.3.min.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link type="text/css" href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' />
+  <link rel="prefetch" href="{{ url_for('static', filename='images/zoom.png') }}">
+  
+</head>
+
+<body>
+  <div class="navbar navbar-fixed-top" data-activeslide="1">
+    <div class="container">
+    
+      <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <div class="nav-collapse collapse navbar-responsive-collapse">
+        <ul class="nav row">
+          <li data-slide="1" class="col-12 col-sm-2"><a id="menu-link-1" href="#slide-1" title="Next Section"><span class="icon icon-user"></span> <span class="text">WHO</span></a></li>
+          <li data-slide="2" class="col-12 col-sm-2"><a id="menu-link-2" href="#slide-2" title="Next Section"><span class="icon icon-question"></span> <span class="text">WHY</span></a></li>
+          <!--<li data-slide="3" class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-3" title="Next Section"><span class="icon icon-group"></span> <span class="text">COMMUNITIES</span></a></li>-->
+          <li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-4" title="Next Section"><span class="icon icon-briefcase"></span> <span class="text">WHAT</span></a></li>
+          <li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-5" title="Next Section"><span class="icon icon-gears"></span> <span class="text">HOW</span></a></li>
+          <li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="icon icon-envelope"></span> <span class="text">CONTACT</span></a></li>
+        </ul>
+        <div class="row">
+          <div class="col-sm-2 active-menu"></div>
+        </div>
+      </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+  </div><!-- /.navbar -->
+  
+  
+  <!-- === Arrows === -->
+  <div id="arrows">
+    <div id="arrow-up" class="disabled"></div>
+    <div id="arrow-down"></div>
+    <div id="arrow-left" class="disabled visible-lg"></div>
+    <div id="arrow-right" class="disabled visible-lg"></div>
+  </div><!-- /.arrows -->
+  
+  <!-- === WHO === -->
+  <div class="slide story" id="slide-1" data-slide="1">
+    <div class="container">
+      <div id="home-row-1" class="row clearfix">
+        <div class="col-12">
+          <h1 class="font-semibold">Theresia <span class="font-thin">Tanzil</span></h1>
+          <h4 class="font-thin">backend developer, <span class="font-semibold">problem solver</span> based in Jakarta, <span class="font-semibold">Indonesia</span>.</h4>
+          <br>
+          <br>
+        </div><!-- /col-12 -->
+      </div><!-- /row -->
+      <div id="home-row-2" class="row clearfix">
+        <div class="col-12 col-sm-4">
+          <!--
+          <div class="home-hover navigation-slide" data-slide="4">
+            <img src="{{ url_for('static', filename='images/s02.png') }}">
+          </div>
+          -->
+          <span>Scripts in PHP, .NET C#, and more recently, Python</span>
+        </div>
+        <div class="col-12 col-sm-4">
+          <!--
+          <div class="home-hover navigation-slide" data-slide="3">
+            <img src="{{ url_for('static', filename='images/s03.png') }}">
+          </div>
+          -->
+          <span>Moving with Indonesia Python User Group towards PyConID.</span>
+        </div>
+        <div class="col-12 col-sm-4">
+          <span>Visibility issues: Indonesian developers are scattered and lack visibility in general, let alone female developers!</span>
+        </div>
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /slide1 -->
+  
+  <!-- === WHY === -->
+  <div class="slide story" id="slide-2" data-slide="2">
+    <div class="container">
+      <div id="section-brandexposure-hourly" class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Python Community Size in developing countries, on Facebook</h3>
+            </div>
+            <div class="panel-body">
+              <div class="span8">
+                <div id="chartCommunitySize"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div><!-- /row -->
+      <div class="row subtitle-row">
+        <div class="col-12">
+          With over 238 million population, Indonesia is the world's fourth most populous country in the world. But despite the size of the Python and other local computing communities, it is a <span class="font-semibold">mystery</span> that no one in Indonesia had actually organized a PyCon. We have bimonthly self-organized Python meetup. Crowd size: 15 people.
+        </div>
+      </div><!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div><!-- /row -->
+      <div class="row content-row statistics">
+        <div class="col-12">
+          <table class="table table-bordered">
+              <tr>
+                <th class="header">Locations <i class="fa fa-sort"></i></th>
+                <th class="header">Webpage <i class="fa fa-sort"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Philippines</td>
+                <td>http://ph.pycon.org/</td>
+              </tr>
+              <tr>
+                <td>Malaysia</td>
+                <td>http://www.pycon.my/</td>
+              </tr>
+              <tr>
+                <td>Argentina</td>
+                <td>http://ar.pycon.org/</td>
+              </tr>
+              <tr>
+                <td>Brasil</td>
+                <td>http://2013.pythonbrasil.org.br/pythonbrasil</td>
+              </tr>
+              <tr>
+                <td>Pycon China</td>
+                <td>http://cn.pycon.org/</td>
+              </tr>
+              <tr>
+                <td>PyCon India</td>
+                <td>http://ph.pycon.org/</td>
+              </tr>
+              <tr>
+                <td>Poland (PyCon PL)</td>
+                <td>http://ph.pycon.org/</td>
+              </tr>
+              <tr>
+                <td>South Africa (PyCon ZA)</td>
+                <td>http://ph.pycon.org/</td>
+              </tr>
+              <tr>
+                <td>Ukraine</td>
+                <td>http://ua.pycon.org/</td>
+              </tr>
+              <tr>
+                <td>Venezuela (PyConVe)</td>
+                <td>http://ve.pycon.org/</td>
+              </tr>
+              <tr class="danger">
+                <td>Indonesia (?)</td>
+                <td>(!!) http://id.pycon.org/ (!!)</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div><!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div><!-- /row -->
+      <div class="row subtitle-row">
+        <div class="col-12 font-thin">We are trying to <span class="font-semibold">fix</span> this<br />
+          <a data-fancybox-group="portfolio" class="fancybox" href="{{ url_for('static', filename='images/idpython-meetup.jpg') }}">
+            <img class="thumb" src="{{ url_for('static', filename='images/idpython-meetup-thumb.jpg') }}" alt="">
+          </a>
+        </div>
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /slide2 -->
+  
+  <!-- === WHAT === -->
+  <div class="slide story" id="slide-4" data-slide="4">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-thin">What to <span class="font-semibold">do</span> and where to <span class="font-semibold">start?</span></div>
+      </div><!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div><!-- /row -->
+      <div class="row subtitle-row">
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+        <div class="col-12 col-sm-10 font-light">A successful PyCon:</div>
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+      </div><!-- /row -->
+      <div class="row content-row">
+        <div class="col-sm-2 hidden-sm">&nbsp;</div>
+        <div class="col-12 col-sm-2">
+          <p><i class="icon icon-bolt"></i></p>
+          <h2 class="font-thin">Getting <br /><span class="font-semibold" >(paying) audience</span></h2>
+          <h4 class="font-thin">Towards economic stability, raising per capita income.</h4>
+        </div><!-- /col12 -->
+        <div class="col-12 col-sm-2">
+          <p><i class="icon icon-cog"></i></p>
+          <h2 class="font-thin">Inviting<br /><span class="font-semibold">speakers.</span></h2>
+          <h4 class="font-thin">Reaching out to reputable international speakers, spreading the words, building credibility.</h4>
+        </div><!-- /col12 -->
+        <div class="col-12 col-sm-2">
+          <p><i class="icon icon-cloud"></i></p>
+          <h2 class="font-thin">Getting<br /><span class="font-semibold">sponsors.</span></h2>
+          <h4 class="font-thin">What's in it for them? Educating businesses of the benefit of endorsing a Python event in a developing country.</h4>
+        </div><!-- /col12 -->
+        <div class="col-12 col-sm-2">
+          <p><i class="icon icon-map-marker"></i></p><!-- icon-gift -->
+          <h2 class="font-thin">Getting<br><span class="font-semibold">there</span></h2>
+          <h4 class="font-thin">Indonesia is an archipelago, extending 5,120 kilometres east to west and 1,760 kilometres north to south.</h4>
+        </div><!-- /col12 -->
+        <div class="col-sm-2 hidden-sm">&nbsp;</div>
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /slide4 -->
+  
+  <!-- === HOW === -->
+  <div class="slide story" id="slide-5" data-slide="5">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-thin">Perhaps learning from... <span class="font-semibold">PyCon2014 Montreal</span>?</div>
+      </div><!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div><!-- /row -->
+      <div class="row subtitle-row">
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+        <div class="col-12 col-sm-10 font-light">
+          <div class="text-center">
+            <span class="font-sub-title"> 1. Planned travel dates:</span><br />
+            <span class="font-sub"> >> April 7, 2014 - April 14, 2014 << </span><br />
+            <span class="font-sub-title"> 2. Home airport:</span><br />
+            <span class="font-sub"> >> (CGK) Jakarta, Indonesia - Soekarno-Hatta Intl << </span><br />
+            <span class="font-sub-title"> 3. Canadian or US visa:</span><br />
+            <span class="font-sub"> >> None yet. Appreciate any help to acquire the Canadian or US Travel Visa. << </span><br />
+            <span class="font-sub-title"> 4. Hotel:</span><br />
+            <span class="font-sub"> >> Will register at the Room Sharing page at the PyCon site. << </span><br />
+            <span class="font-sub-title"> 5. Breakdown of expected expenses:</span><br />
+            <span class="font-sub"> >> I have no problem allocating around $400 on my own to spend on more tutorials, dinner, transportation, and other unpredictable expenses. << </span><br />
+          </div>
+        </div>
+      </div><!-- /row -->
+      <div class="row title-row">
+        <div class="col-12 font-thin"><span class="font-semibold">Estimated expenses:</span></div>
+      </div><!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div><!-- /row -->
+      <div class="row subtitle-row">
+        <!--<div class="col-sm-1 hidden-sm">&nbsp;</div>-->
+        <div class="col-12 col-sm-12 font-light">
+          <table>
+            <tr>
+              <td>
+                <table class="table table-bordered font-sub-title">
+                  <thead>
+                    <tr>
+                      <th class="header">Trip <i class="fa fa-sort"></i></th>
+                      <th class="header">Stops <i class="fa fa-sort"></i></th>
+                      <th class="header">Lowest price found <i class="fa fa-sort"></i></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr class="font-alternatives-selection">
+                    <td>CGK - YUL round trip</td>
+                    <td>two stops</td>
+                    <td>USD$1764 <span class="icon-check-sign">&nbsp;</span></td>
+                  </tr>
+                  <tr class="font-alternatives">
+                    <td>CGK - YUL round trip</td>
+                    <td>one stop</td>
+                    <td>USD$2313</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="font-notabene">*data acquired via wego.com and kayak.com on Jan 8, 2014</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="table-valign-top">
+                <table>
+                  <tbody>
+                  <tr><td>&nbsp;</td></tr>
+                  <tr>
+                    <td class="font-sub">$1,764 USD</td>
+                  </tr>
+                  <tr><td></td></tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table class="table table-bordered font-sub-title">
+                  <thead>
+                    <tr>
+                      <th class="header">Hotel <i class="fa fa-sort"></i></th>
+                      <th class="header">Nights <i class="fa fa-sort"></i></th>
+                      <th class="header">Price/room/night <i class="fa fa-sort"></i></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr class="font-alternatives-selection">
+                    <td>Hyatt Regency</td>
+                    <td>7</td>
+                    <td>$140 USD <span class="icon-check-sign">&nbsp;</span></td>
+                  </tr>
+                  <tr class="font-alternatives">
+                    <td>Westin Hotels</td>
+                    <td>7</td>
+                    <td>$159 USD</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="font-notabene">*data acquired via PyCon2014's Registration Information page on Jan 8, 2014</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="table-valign-top">
+                <table>
+                  <tbody>
+                  <tr><td>&nbsp;</td></tr>
+                  <tr>
+                    <td class="font-sub"><strike>$980 USD</strike><br />$490 USD split</td>
+                  </tr>
+                  <tr><td></td></tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table class="table table-bordered font-sub-title">
+                  <thead>
+                    <tr>
+                      <th class="header">Ticket <i class="fa fa-sort"></i></th>
+                      <th class="header">Price <i class="fa fa-sort"></i></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr class="font-alternatives-selection">
+                    <td>Conference Tickets (Individual rate)</td>
+                    <td>$350 USD <span class="icon-check-sign">&nbsp;</span></td>
+                  </tr>
+                  <tr class="font-alternatives-selection">
+                    <td>Tutorial (eyeing <a target="_blank" href="https://us.pycon.org/2014/schedule/presentation/61/">this</a> or <a target="_blank" href="https://us.pycon.org/2014/schedule/presentation/131/">this</a> or <a target="_blank" href="https://us.pycon.org/2014/schedule/presentation/63/">this</a>)</td>
+                    <td>$150 USD <span class="icon-check-sign">&nbsp;</span></td>
+                  </tr>
+                </table>
+              </td>
+              <td class="table-valign-top">
+                <table>
+                  <tbody>
+                  <tr><td>&nbsp;</td></tr>
+                  <tr>
+                    <td class="font-sub">$350 USD</td>
+                  </tr>
+                  <tr>
+                    <td class="font-sub">$150 USD</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table class="table table-bordered font-sub-title">
+                  <thead>
+                    <tr>
+                      <th class="header">Visa <i class="fa fa-sort"></i></th>
+                      <th class="header">Estimated fee <i class="fa fa-sort"></i></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr class="font-alternatives-selection">
+                    <td>US (Transit) Visa (<a target="_blank" href="http://ustraveldocs.com/id/id-niv-visafeeinfo.asp">source</a>)</td>
+                    <td>$160 USD <span class="icon-check-sign">&nbsp;</span></td>
+                  </tr>
+                  <tr class="font-alternatives-selection">
+                    <td>Canadian Visa: Temporary Resident Applications, Individual - single entry (<a target="_blank" href="http://www.canadainternational.gc.ca/indonesia-Indonesie/visas/fees-frais.aspx">source</a>)</td>
+                    <td>$70 USD <span class="icon-check-sign">&nbsp;</span></td>
+                  </tr>
+                </table>
+              </td>
+              <td class="table-valign-top">
+                <table>
+                  <tbody>
+                  <tr><td>&nbsp;</td></tr>
+                  <tr>
+                    <td class="font-sub">$70 USD</td>
+                  </tr>
+                  <tr>
+                    <td class="font-sub">$160 USD</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-right">
+                Total: &nbsp; 
+              </td>
+              <td class="table-valign-top">
+                $2,984 USD
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /slide5 -->
+  
+  <!-- === CONTACT === -->
+  <div class="slide story" id="slide-6" data-slide="6">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-light">Let's <span class="font-semibold">connect</span></div>
+      </div><!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div><!-- /row -->
+      <div id="contact-row-4" class="row">
+        <div class="col-12 col-sm-4 with-hover-text">
+          <p><a target="_blank" href="#"><i class="icon icon-envelope"></i></a></p>
+          <span class="hover-text font-light ">theresia.tanzil@gmail.com</span></a>
+        </div><!-- /col12 -->
+        <div class="col-12 col-sm-4 with-hover-text">
+          <p><a target="_blank" href="skype:theresiatanzil?add"><i class="icon icon-skype"></i></a></p>
+          <span class="hover-text font-light ">@theresiatanzil</span></a>
+        </div><!-- /col12 -->
+        <div class="col-12 col-sm-4 with-hover-text">
+          <p><a target="_blank" href="https://github.com/theresia"><i class="icon icon-github"></i></a></p>
+          <span class="hover-text font-light">github.com/theresia</span></a>
+        </div><!-- /col12 -->
+        <div class="col-12 col-sm-3 with-hover-text">
+          <p><a target="_blank" href="http://id.linkedin.com/in/theresiatanzil/"><i class="icon icon-linkedin"></i></a></p>
+          <span class="hover-text font-light ">id.linkedin.com/in/theresiatanzil</span></a>
+        </div><!-- /col12 -->
+        <div class="col-12 col-sm-3 with-hover-text">
+          <p><a target="_blank" href="http://www.twitter.com/theresiatanzil"><i class="icon icon-twitter"></i></a></p>
+          <span class="hover-text font-light">@theresiatanzil</span></a>
+        </div><!-- /col12 -->
+        <div class="col-12 col-sm-3 with-hover-text">
+          <p><a target="_blank" href="https://www.facebook.com/theresiatanzil"><i class="icon icon-facebook"></i></a></p>
+          <span class="hover-text font-light ">facebook/theresiatanzil</span></a>
+        </div><!-- /col12 -->
+        <div class="col-12 col-sm-3 with-hover-text">
+          <p><a target="_blank" href="http://last.fm/user/cxqthere"><i class="icon el-icon-lastfm"></i></a></p>
+          <span class="hover-text font-light ">cxqthere</span></a>
+        </div><!-- /col12 -->
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /Slide 6 -->
+  
+</body>
+
+  <!-- SCRIPTS -->
+  <script src="{{ url_for('static', filename='js/html5shiv.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery-1.10.2.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery-migrate-1.2.1.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
+  <script src="{{ url_for('static', filename='fancybox/jquery.fancybox.pack-v=2.1.5.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/morris/raphael-2.1.0.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/morris/morris-0.4.3.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  
+  <script>
+    var chartData = {
+      //"labels": ["Facebook", 'Google+'],
+      "labels": ["Members"],
+      //"legends": ["a", 'b'], 
+      "legends": ["a"], 
+      "items":[
+        { "community_name": "Indonesia https://www.facebook.com/groups/IndonesianPython/ (was 3464 three days ago)","a": "3606", "community_short_name": "Indonesia" },
+        { "community_name": "Python Indonesia https://plus.google.com/communities/109088892666303624032","a": "119", "community_short_name": "Python Indonesia" },
+        { "community_name": "Philippines (PHPUG) https://www.facebook.com/groups/pinoypug/","a": "1300", "community_short_name": "Philippines UG" },
+        { "community_name": "Philippines (PythonPH) https://www.facebook.com/groups/pythonph/","a": "550", "community_short_name": "Philippines" },
+        { "community_name": "India https://www.facebook.com/groups/python.india/","a": "193", "community_short_name": "India" },
+        { "community_name": "Indian Python Developers https://plus.google.com/communities/106429103839749042590","a": "148", "community_short_name": "Indian Python Developers" },
+        { "community_name": "Malaysia https://www.facebook.com/groups/python.malaysia/","a": "604", "community_short_name": "Malaysia" },
+        { "community_name": "PyLadies Tunisia https://www.facebook.com/groups/458792744204403/","a": "33", "community_short_name": "Tunisia" },
+      ]};
+    
+    function chartCommunitySize(container_id, chartData) {
+      //console.log(chartData);
+      var bar_community_size = Morris.Bar({
+        element: container_id,
+        labels: chartData['labels'],
+        xkey: 'community_name',
+        xLabelAngle: 2,
+        ykeys: chartData['legends'],
+        smooth: false,
+        colors: ['#0b62a4','#D58665','#37619d','#fefefe','#A87D8E','#2D619C','#2D9C2F']
+      }).on('click', function(i, row){
+        console.log(i, row);
+      });
+      bar_community_size.setData(chartData['items']);
+      return bar_community_size;
+    }
+    function drawCharts() {
+      chartCommunitySize('chartCommunitySize', chartData);
+    }
+    
+    $(document).ready(function(e) {
+      var lis = $('.nav > li');
+      menu_focus( lis[0], 1 );
+    
+      $(".fancybox").fancybox({
+        padding: 10,
+        helpers: {
+          overlay: { locked: false }
+        }
+      });
+  
+      drawCharts();
+      
+    });
+    
+  </script>
+
+</html>
